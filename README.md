@@ -40,6 +40,7 @@ The API will be available at http://localhost:3000
 ### Authentication
 
 1. Sign Up
+
 Endpoint: POST /api/auth/signup
 This will register a new user.
 Request body:
