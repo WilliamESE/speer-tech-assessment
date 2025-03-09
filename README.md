@@ -42,7 +42,9 @@ The API will be available at http://localhost:3000
 1. Sign Up
 
 Endpoint: POST /api/auth/signup
+
 This will register a new user.
+
 Request body:
 ```
 {
@@ -59,8 +61,11 @@ Response:
 ```
 
 2. Login
+
 Endpoint: POST /api/auth/login
+
 Logs in a user using their username or email.
+
 Request body:
 ```
 {
@@ -78,8 +83,11 @@ Response:
 ### Note Management
 
 3. Get All Notes
+
 Endpoint: GET /api/notes
+
 Retrieves all notes the authenticated user owns or has access to.
+
 Request body:
 ```
 {
@@ -99,12 +107,18 @@ Response:
 ```
 
 4. Get a Note by id
+
 Endpoint: GET /api/notes/:id
+
 Retrieves a single note if the user has access.
 
+
 5. Create a Note
+
 Endpoint: POST /api/notes
+
 Creates a new note.
+
 Request body:
 ```
 {
@@ -121,18 +135,27 @@ Response:
 ```
 
 6. Update a Note
+
 Endpoint: PUT /api/notes/:id
+
 Description: Updates a note if the user is the owner.
 
+
 7. Delete a Note
+
 Endpoint: DELETE /api/notes/:id
+
 Description: Deletes a note if the user is the owner.
+
 
 ### Sharing Notes
 
 8. Share a Note
+
 Endpoint: POST /api/notes/:id/share
+
 Description: Shares a note with another user via email.
+
 ```
 {
   "sharedWithEmail": "friend@example.com"
@@ -148,7 +171,9 @@ Response:
 ### Searching Notes
 
 9. Search Notes
+
 Endpoint: GET /api/search?q=keyword
+
 Description: Searches notes based on a keyword.
 
 ## Database Schema
